@@ -247,8 +247,7 @@ section#apoie #apoie-project a:hover{
         left: 20px;
         right: 20px;
         margin: 0 auto;
-    
-       
+        width: auto;
     }
 }
 
