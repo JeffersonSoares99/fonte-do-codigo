@@ -165,9 +165,22 @@ section#articles .box-article{
 section#articles .img-article{
     width: 40%;
     height: 100%;
-    background-color: white;     
-    
+    background-color: white; 
+    position: relative;
+    z-index: 0;    
 }
+/* 
+.img-article:after{
+    content: '';
+    position: absolute;
+    background:linear-gradient(270deg, rgb(147, 112, 216) 0%, transparent 60%);
+    width: 20%;
+    right: 0px;
+    bottom: 0;
+    top: 0;
+    background-color: white;
+    z-index: -1;
+} */
 
 section#articles .text-article{
     position: relative;
@@ -216,7 +229,7 @@ section#apoie #apoie-project{
     background-color: white;
     padding: 30px;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     color: mediumpurple;
 }
 
@@ -236,7 +249,128 @@ section#apoie #apoie-project a:hover{
     background-color: rgb(163, 150, 236);
 }
 
-@media (max-width: 401px){
+section#team{
+    background-image: linear-gradient(to bottom, #9370d8, #ac94e4, #c5b7ef, #e1dbf8, #ffffff);
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    height: auto;
+}
+
+#team-box{
+    padding: 10px 10px 40px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section#team h3{
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 20px;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 20px rgba(0,0,0,0.5);
+    color: white;
+}
+
+section#team .team-img{
+    width: 50%;
+    height: 100%;
+    padding: 0px;
+}
+
+.container-card{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height:350px;
+    padding: 10px 10px 30px 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
+    border: none !important;
+    border-radius: 10px !important;
+    box-shadow: 4px 4px 20px 0 rgba(0,0,0,0.3);
+
+}
+
+.card:hover{
+    border: none;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    box-shadow: 4px 4px 20px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+.front{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.back{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    background-color: mediumpurple;
+    color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.front img{
+    width: 80%;
+    border-radius: 50%;
+}
+
+.front h4{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+footer{
+    padding: 25px;
+    background-color: mediumslateblue;
+}
+
+footer p{
+    width: 85%;
+    margin: 0 auto;
+    color: white;
+}
+
+
+@media (max-width: 500px){
     #logo img{
         width: 60px;
         height: 60px;
@@ -249,8 +383,36 @@ section#apoie #apoie-project a:hover{
         margin: 0 auto;
         width: auto;
     }
+    
+
 }
 
+@media(max-width:1650px){
+    section#team #team-box{
+        padding: 0px 50px;
+    }
+
+    section#team .team-img{
+        width: 80%;
+        height: auto;
+        padding: 30px;
+    }
+
+    #team-box{
+        justify-content: center;
+    }
+}
+
+@media (max-width:896px){
+    section#team .team-img{
+        display: none;
+        background-color: red;
+        width: 80%;
+        height: auto;
+        padding: 30px;
+    }
+
+}
 
 @media (max-width: 980px){
     nav ul{
