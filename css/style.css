@@ -384,7 +384,7 @@ footer p{
         width: auto;
     }
     section#team #team-box{
-        padding: 0px !important;
+        padding: 0px 10px!important;
     }
 
 }
