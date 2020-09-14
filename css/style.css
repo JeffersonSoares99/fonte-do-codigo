@@ -383,7 +383,9 @@ footer p{
         margin: 0 auto;
         width: auto;
     }
-    
+    section#team #team-box{
+        padding: 0px !important;
+    }
 
 }
 
