@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animate.css-main/source/animate.css">
 
 
 </head>
@@ -22,13 +23,13 @@
                 <img src="imagens/iconfinder_home_office_work_5964551.png" alt="Logo" width="75px" height="75px">
             </div>
 
-            <nav>
+            <nav id="menu">
                 <input type="checkbox" id="check">
                 <label for="check" class="checkbtn">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </label>
 
-                <ul id="menu">
+                <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Artigos</a></li>
                     <li><a href="#">Cursos</a></li>
@@ -53,7 +54,7 @@
         </section>
 
         <section id="articles">
-            <h2>Artigos</h2>
+            <h2 >Artigos</h2>
 
             <div class="box-article">
                 <div class="img-article">
@@ -150,42 +151,64 @@
         </section>
 
         <section id="team">
-                            <h3>Time fonte do código</h3>
+            <h3>Time fonte do código</h3>
 
             <div id="team-box">
                 <img class="team-img" src="imagens/undraw_work_together_h63l.svg" alt="Time">
 
                 <div class="container-card">
                     <div class="card">
-                        <div class="front">
-                            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFb6yBpWJXDUg/profile-displayphoto-shrink_200_200/0?e=1601510400&v=beta&t=crQmNy2VkU8saAk-d6ByTUZBYIY5n7A2o0DSmo31ulw" alt="Jefferson Soares">
+                        <div class="front color-front">
+                            <img class="wow fadeInLeft" data-wow-duration="2s" src="https://media-exp1.licdn.com/dms/image/C4D03AQFb6yBpWJXDUg/profile-displayphoto-shrink_200_200/0?e=1601510400&v=beta&t=crQmNy2VkU8saAk-d6ByTUZBYIY5n7A2o0DSmo31ulw"
+                                alt="Jefferson Soares">
                             <h4>Jefferson Soares <i class="fas fa-laptop-code"></i></h4>
                         </div>
-                        <div class="back">
-                            b
+                        <div class="back color-back">
+                            <ul>
+                                <li><i class="far fa-calendar-alt"></i>21 anos</li>
+                                <li><i class="fas fa-book"></i>Cursando Análise e Desenvolvimentos de Sistemas </i></li>
+                                <li><i class="fas fa-user-graduate"></i>Técnico em Desenvolvimento de Sistemas </i></li>
+                                <li><a href="https://www.linkedin.com/in/jefferson-soares99/" target="blank"> <i
+                                            class="fab fa-linkedin"></i> Linkedin </a></li>
+                                <li> <a href="" target="blank"> <i class="fas fa-envelope-open-text"></i> E-mail </a>
+                                </li>
+                                <li> <a href="https://github.com/JeffersonSoares99" target="blank"> <i
+                                            class="fab fa-github"></i> GitHub </a> </li>
+                            </ul>
                         </div>
-                    
-                    </div> 
+
+                    </div>
 
                 </div>
                 <div class="container-card">
                     <div class="card">
-                        <div class="front">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR1cRKlyxhSLu4_-BATGsk55_uhQgRopFnQoA&usqp=CAU" alt="Matheus Pereira">
-                            <h4>Matheus Pereira <i class="fas fa-laptop-code"></i></h4>
+                        <div class="front color-front">
+                            <img class="wow fadeInRight" data-wow-duration="2s" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR1cRKlyxhSLu4_-BATGsk55_uhQgRopFnQoA&usqp=CAU"
+                                alt="Matheus Pereira">
+                            <h4>Mateus Pereira <i class="fas fa-laptop-code"></i></h4>
                         </div>
-                        <div class="back">
-                            b
+                        <div class="back color-back">
+                            <ul>
+                                <li><i class="far fa-calendar-alt"></i>21 anos</li>
+                                <li><i class="fas fa-book"></i>Cursando Ciências da Computação </i></li>
+                                <li><i class="fas fa-book"></i>Cursando Desenvolvimento de Sistemas </i></li>
+                                <li><a href="https://www.linkedin.com/in/mateus-pereira-dias-b90988156/" target="blank">
+                                        <i class="fab fa-linkedin"></i> Linkedin </a></li>
+                                <li> <a href="" target="blank"> <i class="fas fa-envelope-open-text"></i> E-mail </a>
+                                </li>
+                                <li> <a href="https://github.com/Pereiracode" target="blank"> <i
+                                            class="fab fa-github"></i> GitHub </a> </li>
+                            </ul>
                         </div>
-                    
-                    </div> 
+
+                    </div>
 
                 </div>
 
-             
+
             </div>
-            
-            
+
+
         </section>
 
 
@@ -203,7 +226,13 @@
         </div>
     </footer>
 
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
 </body>
+
+
 
 </html>
